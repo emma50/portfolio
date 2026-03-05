@@ -1,41 +1,51 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 
 const links = [
-  { label: 'About',      href: '#about' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects',   href: '#projects' },
-  { label: 'Contact',    href: '#contact' },
-]
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
 
 export default function Nav() {
-  const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40)
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const handleNav = (href: string) => {
-    setMenuOpen(false)
-    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
-  }
+    setMenuOpen(false);
+    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-bg/95 backdrop-blur-md border-b border-border' : 'bg-transparent'
+        scrolled
+          ? "bg-bg/95 backdrop-blur-md border-b border-border"
+          : "bg-transparent"
       }`}
     >
       <nav className="max-w-[1100px] mx-auto px-6 sm:px-8 py-5 flex items-center justify-between">
         {/* Logo */}
         <a
           href="#hero"
-          onClick={(e) => { e.preventDefault(); handleNav('#hero') }}
+          onClick={(e) => {
+            e.preventDefault();
+            handleNav("#hero");
+          }}
           className="font-display font-black text-lg text-white tracking-tight"
         >
-          EO<span className="text-accent">.</span>
+          <img
+            src="/icons/about-photo.jpg"
+            alt="Logo"
+            className="w-10 h-10 mr-2 rounded-full"
+          />
+          {/* <span className="text-accent">.</span> */}
         </a>
 
         {/* Desktop links */}
@@ -66,16 +76,22 @@ export default function Nav() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-0.5 bg-text transition-all duration-200 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-text transition-all duration-200 ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-text transition-all duration-200 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          <span
+            className={`block w-6 h-0.5 bg-text transition-all duration-200 ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+          />
+          <span
+            className={`block w-6 h-0.5 bg-text transition-all duration-200 ${menuOpen ? "opacity-0" : ""}`}
+          />
+          <span
+            className={`block w-6 h-0.5 bg-text transition-all duration-200 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+          />
         </button>
       </nav>
 
       {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 bg-surface border-t border-border ${
-          menuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+          menuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <ul className="flex flex-col px-6 py-4 gap-1">
@@ -100,5 +116,5 @@ export default function Nav() {
         </ul>
       </div>
     </header>
-  )
+  );
 }
