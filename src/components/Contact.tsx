@@ -85,7 +85,7 @@ export default function Contact() {
                 <span className="w-10 h-px bg-accent/40" />
               </div>
               <p className="text-muted text-sm leading-[1.75] mb-5">
-                The fastest way to reach me. I respond within 24 hours on
+                The fastest way to reach me. I respond within 8 hours on
                 business days.
               </p>
               <a
