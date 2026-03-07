@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hire": "Hire Me →"
+  },
+  "hero": {
+    "available": "Open to remote roles & contracts",
+    "title_line1": "Senior",
+    "title_line2": "Frontend",
+    "title_line3": "Engineer.",
+    "sub": "I build <strong>production-grade React and Next.js applications</strong> for SaaS teams. Specializing in performance optimization, scalable architecture, and frontends that <strong>convert trial users into paying customers.</strong>",
+    "cta_primary": "Hire Me for a Role →",
+    "cta_secondary": "Start a Project",
+    "stats": {
+      "years_num": "6+",
+      "years_label": "Years experience",
+      "traffic_num": "40%",
+      "traffic_label": "Traffic growth delivered",
+      "defects_num": "30%",
+      "defects_label": "Defect reduction",
+      "deploys_num": "66%",
+      "deploys_label": "Faster deployments"
+    }
+  },
+  "about": {
+    "section_label": "About",
+    "title": "I build systems\nthat scale.",
+    "p1": "Most frontend engineers can ship features. I ship <strong>systems</strong> — architecture that holds up under real user load, design patterns a team can inherit without pain, and performance work that shows up in the metrics that matter.",
+    "p2": "My background in <strong>Chemical Engineering</strong> shaped how I think: find the constraint, eliminate waste, measure the result. I apply that same rigor to every codebase. When I led a TypeScript migration that reduced runtime defects by 30%, it wasn't about syntax — it was about shared confidence across the team.",
+    "p3": "I'm based in Lagos, Nigeria and work exclusively with remote teams across the US, UK, and Europe. Available for <strong>full-time roles</strong> and <strong>frontend sprint contracts.</strong>",
+    "download_cv": "Download CV →",
+    "skill_groups": {
+      "core_stack": "Core Stack",
+      "testing_devops": "Testing & DevOps",
+      "specialized_in": "Specialized In",
+      "state_data": "State & Data"
+    }
+  },
+  "experience": {
+    "section_label": "Experience",
+    "title": "Where I've shipped.",
+    "subtitle": "6+ years across startups, YC-backed companies, and high-growth remote teams.",
+    "roles": {
+      "glovez": {
+        "role": "Senior Frontend Engineer",
+        "blurb": "B2B SaaS startup building business software for the African market. Joined as an early engineer, scaling from pre-launch MVP to production.",
+        "bullets": [
+          "Eliminated a full category of runtime errors and reduced production defects by **30%** by leading a cross-application TypeScript migration that increased type coverage across the entire frontend codebase.",
+          "Grew organic traffic by **40%** by engineering performance-first Next.js applications, directly improving Core Web Vitals scores and search engine rankings.",
+          "Cut deployment time by **66%** (30 min → <10 min) by architecting containerized CI/CD pipelines with GitHub Actions and Docker, enabling faster, more confident releases.",
+          "Accelerated feature delivery and reduced UI code duplication by **30%** by designing a standardized Tailwind CSS component system adopted across the engineering team."
+        ]
+      },
+      "gitstart": {
+        "role": "Full Stack Developer",
+        "blurb": "Y Combinator-backed platform that embeds vetted engineers into remote teams to accelerate shipping velocity.",
+        "bullets": [
+          "Improved merge velocity and codebase maintainability for high-growth engineering teams by delivering production-ready pull requests and complex React component refactors across multiple client codebases.",
+          "Reduced new feature implementation time by rebuilding legacy UI into a reusable, Storybook-documented component library, enforcing design consistency and reducing cross-team duplication.",
+          "Increased release frequency and cut manual release errors by automating CI/CD workflows and containerized deployments using GitHub Actions and Docker.",
+          "Reduced production regressions and improved uptime by introducing comprehensive Jest unit tests and Cypress E2E test coverage across all client applications."
+        ]
+      },
+      "compute": {
+        "role": "Frontend Developer",
+        "bullets": [
+          "Improved user engagement and reduced bounce rates on high-traffic real estate platforms by optimizing JavaScript bundle sizes and implementing React lazy loading and code-splitting strategies.",
+          "Increased lead capture and search visibility by shipping SEO-optimized Next.js pages with structured data, semantic HTML, and Core Web Vitals improvements aligned to client acquisition KPIs.",
+          "Shortened release cycles and caught regressions earlier by building automated CI/CD pipelines and a frontend test automation suite covering all critical user flows.",
+          "Standardized engineering practices across a growing team by producing technical documentation and onboarding guides, reducing new-hire ramp time from day one."
+        ]
+      },
+      "andela": {
+        "role": "Software Engineer Intern",
+        "bullets": [
+          "Built responsive, WCAG-compliant React UI components for Quick Credit, a micro-lending platform, translating complex designs into production-ready code.",
+          "Maintained MVP feature quality by implementing Test-Driven Development (TDD) with Mocha and Chai inside an agile sprint environment with daily code reviews."
+        ]
+      }
+    }
+  },
+  "projects": {
+    "section_label": "Projects",
+    "title": "Selected work.",
+    "subtitle": "Production applications I've designed and built — each with real users, real metrics.",
+    "live_site": "Live Site →",
+    "items": {
+      "fabspace": {
+        "desc": "AI-powered platform connecting design engineers, purchasing managers, and EMS providers. Built dynamic user flows, third-party AI integrations, and a responsive SaaS dashboard from the ground up.",
+        "metric": "⚡ Production SaaS · Live users"
+      },
+      "protronics": {
+        "desc": "Performance- and SEO-first corporate site for a US-based contract manufacturing firm. Achieved strong Core Web Vitals through code-splitting, lazy loading, and structured data.",
+        "metric": "⚡ Improved Core Web Vitals · SEO optimized"
+      },
+      "vision": {
+        "desc": "AI-powered image Q&A tool built with Cloudinary for asset management and Google Gemini for vision inference. Built the full Q&A flow and image-handling pipeline end-to-end.",
+        "metric": "⚡ Gemini Vision · Cloudinary pipeline"
+      },
+      "cloudi": {
+        "desc": "Structured, project-based DevOps training platform. Built an accessible, responsive learning UI with course progression, content modules, and a clean enrollment experience.",
+        "metric": "⚡ Education platform · Job-ready curriculum"
+      }
+    }
+  },
+  "testimonial": {
+    "quote": "Emmanuel is an exceptional software developer with an excellent grasp of programming languages and frameworks — JavaScript, TypeScript, React, Next.js, and Node.js. He possesses a strong understanding of the software development lifecycle and the ability to solve complex problems with efficiency and clarity. I have no doubt he will be a valuable addition to any team.",
+    "name": "Chilo Nwokolo",
+    "title": "Software Engineer · Compute Essentials Inc."
+  },
+  "contact": {
+    "section_label": "Contact",
+    "title": "Let's work\ntogether.",
+    "availability": "Currently open to remote roles & contracts",
+    "body": "Whether you're hiring for a senior frontend position or need a focused sprint to ship faster — I'd like to hear what you're building.",
+    "email_label": "Email",
+    "email_body": "The fastest way to reach me. I respond within 24 hours on business days.",
+    "send": "Send a Message →",
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "Twitter / X"
+    }
+  },
+  "footer": {
+    "role": "Senior Frontend Engineer",
+    "location": "Lagos, Nigeria · Open to Remote"
+  }
+}

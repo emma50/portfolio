@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "hire": "Einstellen →"
+  },
+  "hero": {
+    "available": "Offen für Remote-Stellen & Aufträge",
+    "title_line1": "Senior",
+    "title_line2": "Frontend",
+    "title_line3": "Ingenieur.",
+    "sub": "Ich entwickle <strong>produktionsreife React- und Next.js-Anwendungen</strong> für SaaS-Teams. Spezialisiert auf Performance-Optimierung, skalierbare Architektur und Frontends, die <strong>Testnutzer in zahlende Kunden umwandeln.</strong>",
+    "cta_primary": "Für eine Stelle einstellen →",
+    "cta_secondary": "Projekt starten",
+    "stats": {
+      "years_num": "6+",
+      "years_label": "Jahre Erfahrung",
+      "traffic_num": "40%",
+      "traffic_label": "Traffic-Wachstum",
+      "defects_num": "30%",
+      "defects_label": "Fehlerreduzierung",
+      "deploys_num": "66%",
+      "deploys_label": "Schnellere Deployments"
+    }
+  },
+  "about": {
+    "section_label": "Über mich",
+    "title": "Ich baue Systeme,\ndie skalieren.",
+    "p1": "Die meisten Frontend-Ingenieure können Features liefern. Ich liefere <strong>Systeme</strong> — Architektur, die unter realer Last standhält, Design-Patterns, die ein Team problemlos übernehmen kann, und Performance-Arbeit, die in den wichtigen Metriken sichtbar wird.",
+    "p2": "Mein Hintergrund im <strong>Chemieingenieurwesen</strong> hat meine Denkweise geprägt: Engpass finden, Verschwendung eliminieren, Ergebnis messen. Diese Strenge bringe ich in jede Codebasis. Als ich eine TypeScript-Migration leitete, die Laufzeitfehler um 30% reduzierte, ging es nicht um Syntax — es ging um gemeinsames Vertrauen im Team.",
+    "p3": "Ich lebe in Lagos, Nigeria und arbeite ausschließlich mit Remote-Teams in den USA, Großbritannien und Europa. Verfügbar für <strong>Vollzeitstellen</strong> und <strong>Frontend-Sprint-Aufträge.</strong>",
+    "download_cv": "Lebenslauf herunterladen →",
+    "skill_groups": {
+      "core_stack": "Kern-Stack",
+      "testing_devops": "Testing & DevOps",
+      "specialized_in": "Spezialisiert auf",
+      "state_data": "State & Daten"
+    }
+  },
+  "experience": {
+    "section_label": "Erfahrung",
+    "title": "Wo ich geliefert habe.",
+    "subtitle": "6+ Jahre in Startups, YC-geförderten Unternehmen und schnell wachsenden Remote-Teams.",
+    "roles": {
+      "glovez": {
+        "role": "Senior Frontend-Ingenieur",
+        "blurb": "B2B-SaaS-Startup, das Unternehmenssoftware für den afrikanischen Markt entwickelt. Als früher Ingenieur eingestiegen und das Produkt von der Pre-Launch-MVP bis zur Produktion skaliert.",
+        "bullets": [
+          "Eine vollständige Kategorie von Laufzeitfehlern eliminiert und Produktionsfehler um **30%** reduziert durch eine anwendungsübergreifende TypeScript-Migration zur Erhöhung der Typabdeckung.",
+          "Organischen Traffic um **40%** gesteigert durch performance-orientierte Next.js-Anwendungen, die Core Web Vitals und SEO-Rankings direkt verbesserten.",
+          "Deployment-Zeit um **66%** verkürzt (30 Min → <10 Min) durch containerisierte CI/CD-Pipelines mit GitHub Actions und Docker.",
+          "Feature-Lieferung beschleunigt und UI-Code-Duplizierung um **30%** reduziert durch ein standardisiertes Tailwind CSS-Komponentensystem."
+        ]
+      },
+      "gitstart": {
+        "role": "Full-Stack-Entwickler",
+        "blurb": "Von Y Combinator unterstützte Plattform, die geprüfte Ingenieure in Remote-Teams integriert, um die Liefergeschwindigkeit zu erhöhen.",
+        "bullets": [
+          "Merge-Velocity und Code-Wartbarkeit für schnell wachsende Engineering-Teams verbessert durch produktionsreife Pull Requests und komplexe React-Refactorings.",
+          "Implementierungszeit für neue Features reduziert durch Umbau von Legacy-UI in eine wiederverwendbare, Storybook-dokumentierte Komponentenbibliothek.",
+          "Release-Frequenz erhöht und manuelle Release-Fehler reduziert durch automatisierte CI/CD-Workflows mit GitHub Actions und Docker.",
+          "Produktionsregressionen reduziert und Verfügbarkeit verbessert durch umfassende Jest-Unit-Tests und Cypress-E2E-Testabdeckung."
+        ]
+      },
+      "compute": {
+        "role": "Frontend-Entwickler",
+        "bullets": [
+          "Nutzerengagement verbessert und Absprungraten auf stark frequentierten Immobilienplattformen reduziert durch JavaScript-Bundle-Optimierung und React Lazy Loading.",
+          "Lead-Generierung und Suchsichtbarkeit gesteigert durch SEO-optimierte Next.js-Seiten mit strukturierten Daten und Core Web Vitals-Verbesserungen.",
+          "Release-Zyklen verkürzt und Regressionen früher erkannt durch automatisierte CI/CD-Pipelines und Frontend-Testautomatisierung.",
+          "Engineering-Praktiken in einem wachsenden Team standardisiert durch technische Dokumentation und Onboarding-Leitfäden."
+        ]
+      },
+      "andela": {
+        "role": "Software-Ingenieur Praktikant",
+        "bullets": [
+          "Responsive, WCAG-konforme React-UI-Komponenten für Quick Credit, eine Mikrokreditplattform, entwickelt und komplexe Designs in produktionsreifen Code umgesetzt.",
+          "MVP-Feature-Qualität durch testgetriebene Entwicklung (TDD) mit Mocha und Chai in einem agilen Sprint-Umfeld sichergestellt."
+        ]
+      }
+    }
+  },
+  "projects": {
+    "section_label": "Projekte",
+    "title": "Ausgewählte Arbeiten.",
+    "subtitle": "Produktionsanwendungen, die ich entworfen und entwickelt habe — jede mit echten Nutzern und echten Metriken.",
+    "live_site": "Live-Website →",
+    "items": {
+      "fabspace": {
+        "desc": "KI-gestützte Plattform, die Designingenieure, Einkaufsleiter und EMS-Anbieter vernetzt. Dynamische Nutzerflüsse, Drittanbieter-KI-Integrationen und ein responsives SaaS-Dashboard entwickelt.",
+        "metric": "⚡ Produktions-SaaS · Aktive Nutzer"
+      },
+      "protronics": {
+        "desc": "Performance- und SEO-optimierte Unternehmenswebsite für einen US-amerikanischen Auftragsfertiger. Starke Core Web Vitals durch Code-Splitting, Lazy Loading und strukturierte Daten erreicht.",
+        "metric": "⚡ Verbesserte Core Web Vitals · SEO-optimiert"
+      },
+      "vision": {
+        "desc": "KI-gestütztes Bild-Q&A-Tool mit Cloudinary für Asset-Management und Google Gemini für Vision-Inferenz. Vollständigen Q&A-Fluss und Bildverarbeitungs-Pipeline von Grund auf entwickelt.",
+        "metric": "⚡ Gemini Vision · Cloudinary-Pipeline"
+      },
+      "cloudi": {
+        "desc": "Strukturierte, projektbasierte DevOps-Trainingsplattform. Zugängliche, responsive Lernoberfläche mit Kursfortschritt und Inhaltsmodulen entwickelt.",
+        "metric": "⚡ Bildungsplattform · Praxisnahes Curriculum"
+      }
+    }
+  },
+  "testimonial": {
+    "quote": "Emmanuel ist ein außergewöhnlicher Softwareentwickler mit ausgezeichneten Kenntnissen in Programmiersprachen und Frameworks — JavaScript, TypeScript, React, Next.js und Node.js. Er verfügt über ein tiefes Verständnis des Software-Entwicklungslebenszyklus und die Fähigkeit, komplexe Probleme effizient und klar zu lösen. Ich zweifle nicht daran, dass er eine wertvolle Bereicherung für jedes Team sein wird.",
+    "name": "Chilo Nwokolo",
+    "title": "Software-Ingenieur · Compute Essentials Inc."
+  },
+  "contact": {
+    "section_label": "Kontakt",
+    "title": "Lass uns\nzusammenarbeiten.",
+    "availability": "Derzeit offen für Remote-Stellen & Aufträge",
+    "body": "Ob Sie eine Senior-Frontend-Position besetzen oder einen fokussierten Sprint benötigen — ich höre gerne, was Sie aufbauen.",
+    "email_label": "E-Mail",
+    "email_body": "Der schnellste Weg, mich zu erreichen. Ich antworte innerhalb von 24 Stunden an Werktagen.",
+    "send": "Nachricht senden →",
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "Twitter / X"
+    }
+  },
+  "footer": {
+    "role": "Senior Frontend-Ingenieur",
+    "location": "Lagos, Nigeria · Offen für Remote"
+  }
+}

@@ -1,17 +1,24 @@
-import { stats } from "../data";
+import { useTranslation, Trans } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
+
+  const stats = [
+    { num: t("hero.stats.years_num"), label: t("hero.stats.years_label") },
+    { num: t("hero.stats.traffic_num"), label: t("hero.stats.traffic_label") },
+    { num: t("hero.stats.defects_num"), label: t("hero.stats.defects_label") },
+    { num: t("hero.stats.deploys_num"), label: t("hero.stats.deploys_label") },
+  ];
+
   return (
     <section
       id="hero"
       className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden"
     >
-      {/* Decorative SVG */}
       <svg
         className="absolute right-[-80px] top-1/2 -translate-y-1/2 w-[420px] h-[420px] opacity-[0.055] pointer-events-none hidden lg:block"
         viewBox="0 0 400 400"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <rect
           x="0"
@@ -67,59 +74,51 @@ export default function Hero() {
       </svg>
 
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 sm:px-8 w-full">
-        {/* Eyebrow */}
         <div className="animate-fade-up inline-flex items-center gap-2.5 bg-accent/8 border border-accent/20 px-3.5 py-1.5 mb-7">
           <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse2" />
           <span className="text-accent text-xs font-semibold tracking-[0.1em] uppercase font-display">
-            Open to remote roles &amp; contracts
+            {t("hero.available")}
           </span>
         </div>
 
-        {/* Headline */}
         <h1
           className="animate-fade-up-1 font-display font-black leading-none tracking-tight text-white"
           style={{ fontSize: "clamp(3rem, 8vw, 5.5rem)" }}
         >
-          Senior
+          {t("hero.title_line1")}
           <br />
-          <span className="text-accent">Frontend</span>
+          <span className="text-accent">{t("hero.title_line2")}</span>
           <br />
-          <span className="text-muted">Engineer.</span>
+          <span className="text-muted">{t("hero.title_line3")}</span>
         </h1>
 
-        {/* Sub */}
         <p
           className="animate-fade-up-2 mt-7 max-w-[560px] text-muted leading-relaxed"
           style={{ fontSize: "clamp(0.95rem, 2vw, 1.075rem)" }}
         >
-          I build{" "}
-          <strong className="text-text font-medium">
-            production-grade React and Next.js applications
-          </strong>{" "}
-          for SaaS teams. Specializing in performance optimization, scalable
-          architecture, and frontends that{" "}
-          <strong className="text-text font-medium">
-            convert trial users into paying customers.
-          </strong>
+          <Trans
+            i18nKey="hero.sub"
+            components={{
+              strong: <strong className="text-text font-medium" />,
+            }}
+          />
         </p>
 
-        {/* CTAs */}
         <div className="animate-fade-up-3 flex flex-wrap gap-4 mt-11">
           <a
             href="mailto:okwuidegbeemmanuel@gmail.com"
             className="inline-flex items-center gap-2 bg-accent text-bg font-display font-bold text-sm tracking-wide px-7 py-3.5 hover:opacity-85 transition-all duration-200 hover:-translate-y-0.5"
           >
-            Hire Me for a Role →
+            {t("hero.cta_primary")}
           </a>
           <a
             href="mailto:okwuidegbeemmanuel@gmail.com?subject=Project%20Inquiry"
             className="inline-flex items-center gap-2 border border-border text-text font-display font-semibold text-sm tracking-wide px-7 py-3.5 hover:border-muted hover:text-white transition-all duration-200 hover:-translate-y-0.5"
           >
-            Start a Project
+            {t("hero.cta_secondary")}
           </a>
         </div>
 
-        {/* Stats */}
         <div className="animate-fade-up-4 flex flex-wrap gap-x-12 gap-y-6 mt-16 pt-12 border-t border-border">
           {stats.map((s) => (
             <div key={s.label}>
@@ -127,7 +126,7 @@ export default function Hero() {
                 className="font-display font-black text-white leading-none tracking-tight"
                 style={{ fontSize: "clamp(1.75rem, 3vw, 2.25rem)" }}
               >
-                {s.num.replace(/\D/, "")}
+                {s.num.replace(/[%+]/, "")}
                 <span className="text-accent">
                   {s.num.replace(/[^%+]/g, "")}
                 </span>

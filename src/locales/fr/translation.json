@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact",
+    "hire": "Me recruter →"
+  },
+  "hero": {
+    "available": "Ouvert aux postes et contrats à distance",
+    "title_line1": "Ingénieur",
+    "title_line2": "Frontend",
+    "title_line3": "Senior.",
+    "sub": "Je construis des <strong>applications React et Next.js de qualité production</strong> pour les équipes SaaS. Spécialisé dans l'optimisation des performances, l'architecture évolutive et des frontends qui <strong>convertissent les utilisateurs en abonnés payants.</strong>",
+    "cta_primary": "Me recruter →",
+    "cta_secondary": "Démarrer un projet",
+    "stats": {
+      "years_num": "6+",
+      "years_label": "Années d'expérience",
+      "traffic_num": "40%",
+      "traffic_label": "Croissance du trafic",
+      "defects_num": "30%",
+      "defects_label": "Réduction des défauts",
+      "deploys_num": "66%",
+      "deploys_label": "Déploiements plus rapides"
+    }
+  },
+  "about": {
+    "section_label": "À propos",
+    "title": "Je construis des systèmes\nqui évoluent.",
+    "p1": "La plupart des ingénieurs frontend peuvent livrer des fonctionnalités. Je livre des <strong>systèmes</strong> — une architecture qui tient sous la charge réelle, des patterns que l'équipe peut reprendre sans douleur, et des optimisations qui apparaissent dans les métriques qui comptent.",
+    "p2": "Ma formation en <strong>Génie Chimique</strong> a façonné ma façon de penser : trouver la contrainte, éliminer le gaspillage, mesurer le résultat. J'applique cette rigueur à chaque base de code. Quand j'ai mené une migration TypeScript qui a réduit les défauts de 30%, ce n'était pas une question de syntaxe — c'était une question de confiance partagée au sein de l'équipe.",
+    "p3": "Je suis basé à Lagos, Nigéria, et je travaille exclusivement avec des équipes à distance aux États-Unis, au Royaume-Uni et en Europe. Disponible pour des <strong>postes à plein temps</strong> et des <strong>contrats de sprint frontend.</strong>",
+    "download_cv": "Télécharger le CV →",
+    "skill_groups": {
+      "core_stack": "Stack principal",
+      "testing_devops": "Tests & DevOps",
+      "specialized_in": "Spécialisé en",
+      "state_data": "État & Données"
+    }
+  },
+  "experience": {
+    "section_label": "Expérience",
+    "title": "Où j'ai livré.",
+    "subtitle": "6+ ans dans des startups, des entreprises soutenues par YC et des équipes à forte croissance.",
+    "roles": {
+      "glovez": {
+        "role": "Ingénieur Frontend Senior",
+        "blurb": "Startup SaaS B2B construisant des logiciels d'entreprise pour le marché africain. Rejoint en tant qu'ingénieur initial, montée en charge du MVP pré-lancement à la production.",
+        "bullets": [
+          "Éliminé une catégorie entière d'erreurs runtime et réduit les défauts de production de **30%** en menant une migration TypeScript inter-applications qui a augmenté la couverture de types.",
+          "Augmenté le trafic organique de **40%** en développant des applications Next.js axées sur la performance, améliorant directement les Core Web Vitals et le référencement.",
+          "Réduit le temps de déploiement de **66%** (30 min → <10 min) en concevant des pipelines CI/CD conteneurisés avec GitHub Actions et Docker.",
+          "Accéléré la livraison des fonctionnalités et réduit la duplication du code UI de **30%** en concevant un système de composants Tailwind CSS standardisé."
+        ]
+      },
+      "gitstart": {
+        "role": "Développeur Full Stack",
+        "blurb": "Plateforme soutenue par Y Combinator qui intègre des ingénieurs qualifiés dans des équipes distantes pour accélérer la vitesse de livraison.",
+        "bullets": [
+          "Amélioré la vélocité de fusion et la maintenabilité du code pour des équipes en forte croissance en livrant des pull requests prêtes pour la production.",
+          "Réduit le temps d'implémentation des nouvelles fonctionnalités en reconstruisant l'UI legacy en une bibliothèque de composants réutilisables documentés avec Storybook.",
+          "Augmenté la fréquence de publication et réduit les erreurs de publication manuelles en automatisant les workflows CI/CD avec GitHub Actions et Docker.",
+          "Réduit les régressions de production et amélioré la disponibilité en introduisant une couverture de tests Jest et Cypress complète."
+        ]
+      },
+      "compute": {
+        "role": "Développeur Frontend",
+        "bullets": [
+          "Amélioré l'engagement des utilisateurs et réduit les taux de rebond sur des plateformes immobilières à fort trafic en optimisant les bundles JavaScript.",
+          "Augmenté la capture de leads et la visibilité en livrant des pages Next.js optimisées pour le SEO avec des données structurées et des améliorations des Core Web Vitals.",
+          "Raccourci les cycles de publication et détecté les régressions plus tôt en construisant des pipelines CI/CD automatisés et une suite de tests frontend.",
+          "Standardisé les pratiques d'ingénierie au sein d'une équipe croissante en produisant de la documentation technique et des guides d'intégration."
+        ]
+      },
+      "andela": {
+        "role": "Stagiaire Ingénieur Logiciel",
+        "bullets": [
+          "Construit des composants React réactifs et conformes WCAG pour Quick Credit, une plateforme de micro-prêt, en traduisant des designs complexes en code prêt pour la production.",
+          "Maintenu la qualité des fonctionnalités MVP en appliquant le développement piloté par les tests (TDD) avec Mocha et Chai dans un environnement agile."
+        ]
+      }
+    }
+  },
+  "projects": {
+    "section_label": "Projets",
+    "title": "Travaux sélectionnés.",
+    "subtitle": "Applications de production que j'ai conçues et développées — chacune avec de vrais utilisateurs et de vraies métriques.",
+    "live_site": "Voir le site →",
+    "items": {
+      "fabspace": {
+        "desc": "Plateforme alimentée par l'IA connectant ingénieurs de conception, responsables achats et fournisseurs EMS. Développé des flux utilisateurs dynamiques, des intégrations IA tierces et un tableau de bord SaaS responsive.",
+        "metric": "⚡ SaaS en production · Utilisateurs actifs"
+      },
+      "protronics": {
+        "desc": "Site d'entreprise axé sur la performance et le SEO pour un fabricant sous contrat américain. Core Web Vitals optimisés via le code-splitting, le chargement différé et les données structurées.",
+        "metric": "⚡ Core Web Vitals améliorés · SEO optimisé"
+      },
+      "vision": {
+        "desc": "Outil de questions-réponses sur images alimenté par l'IA, construit avec Cloudinary et Google Gemini. Développé le flux Q&R complet et le pipeline de traitement d'images de bout en bout.",
+        "metric": "⚡ Vision Gemini · Pipeline Cloudinary"
+      },
+      "cloudi": {
+        "desc": "Plateforme de formation DevOps structurée et basée sur des projets. Construit une interface d'apprentissage accessible et responsive avec progression de cours et modules de contenu.",
+        "metric": "⚡ Plateforme éducative · Curriculum professionnel"
+      }
+    }
+  },
+  "testimonial": {
+    "quote": "Emmanuel est un développeur logiciel exceptionnel avec une excellente maîtrise des langages et frameworks — JavaScript, TypeScript, React, Next.js et Node.js. Il possède une solide compréhension du cycle de développement logiciel et la capacité de résoudre des problèmes complexes avec efficacité et clarté. Je n'ai aucun doute qu'il sera un atout précieux pour n'importe quelle équipe.",
+    "name": "Chilo Nwokolo",
+    "title": "Ingénieur Logiciel · Compute Essentials Inc."
+  },
+  "contact": {
+    "section_label": "Contact",
+    "title": "Travaillons\nensemble.",
+    "availability": "Actuellement disponible pour des postes et contrats à distance",
+    "body": "Que vous recrutiez pour un poste senior frontend ou que vous ayez besoin d'un sprint ciblé pour livrer plus vite — je serais ravi d'entendre ce que vous construisez.",
+    "email_label": "Email",
+    "email_body": "Le moyen le plus rapide de me contacter. Je réponds sous 24 heures les jours ouvrables.",
+    "send": "Envoyer un message →",
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "Twitter / X"
+    }
+  },
+  "footer": {
+    "role": "Ingénieur Frontend Senior",
+    "location": "Lagos, Nigéria · Ouvert au télétravail"
+  }
+}
