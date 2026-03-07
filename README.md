@@ -44,10 +44,3 @@ src/
 ├── main.tsx
 └── index.css
 ```
-
-## Customisation
-
-All content lives in `src/data.ts` — edit your roles, projects,
-skills, and stats there without touching any component files.
-
-To update your email, find/replace `okwuidegbeemmanuel@gmail.com`.
