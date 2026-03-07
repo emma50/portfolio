@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-// import { experiences } from "../data";
 import { useInView } from "../hooks/useInView";
 
 // Static data (non-translatable: company name, period, location, badge, links)
