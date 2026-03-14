@@ -11,6 +11,7 @@ export default function Nav() {
     { label: t("nav.about"), href: "#about" },
     { label: t("nav.experience"), href: "#experience" },
     { label: t("nav.projects"), href: "#projects" },
+    { label: t("nav.pricing"), href: "#pricing" },
     { label: t("nav.contact"), href: "#contact" },
   ];
 

@@ -3,6 +3,7 @@
     "about": "About",
     "experience": "Experience",
     "projects": "Projects",
+    "pricing": "Pricing",
     "contact": "Contact",
     "hire": "Hire Me →"
   },
@@ -123,6 +124,74 @@
       "linkedin": "LinkedIn",
       "github": "GitHub",
       "twitter": "Twitter / X"
+    }
+  },
+  "pricing": {
+    "section_label": "Pricing",
+    "title": "Simple pricing.",
+    "subtitle": "Transparent, value-based packages with clear deliverables. All prices in Nigerian Naira (₦).",
+    "popular_badge": "Most Popular",
+    "cta": "Start a Conversation →",
+    "retainer_label": "Add-on",
+    "retainer_title": "Monthly Retainer",
+    "retainer_desc": "Keep your product healthy and evolving. Ideal for businesses that need ongoing frontend support without hiring full-time.",
+    "retainer_price": "₦150k – ₦400k",
+    "retainer_per": "/ month",
+    "retainer_cta": "Inquire →",
+    "retainer_tag_1": "Bug fixes & updates",
+    "retainer_tag_2": "Performance monitoring",
+    "retainer_tag_3": "New feature additions",
+    "retainer_tag_4": "Priority response",
+    "note_title": "How payment works",
+    "note_body": "A 40–50% deposit is required before work begins. The remaining balance is due upon delivery and your approval. Every project is backed by a written contract covering scope, timeline, and revision limits.",
+    "packages": {
+      "starter": {
+        "tier": "Starter",
+        "name": "Basic Package",
+        "target": "Small businesses & personal brands",
+        "price": "₦250k – ₦500k",
+        "delivery": "~2 week delivery",
+        "features": [
+          "Up to 5-page responsive website",
+          "Modern framework-based UI",
+          "Contact form integration",
+          "Basic on-page SEO setup",
+          "1 round of revisions",
+          "Deployment assistance"
+        ]
+      },
+      "growth": {
+        "tier": "Growth",
+        "name": "Pro Package",
+        "target": "Startups & product companies",
+        "price": "₦700k – ₦1.5m",
+        "delivery": "~4 week delivery",
+        "features": [
+          "Up to 10 pages or single-feature app",
+          "Custom UI design implementation",
+          "REST API & backend integration",
+          "User authentication (login & signup)",
+          "Performance & Core Web Vitals optimization",
+          "3 rounds of revisions",
+          "14-day post-launch support"
+        ]
+      },
+      "premium": {
+        "tier": "Premium",
+        "name": "Enterprise",
+        "target": "Funded startups & corporates",
+        "price": "₦2m+",
+        "delivery": "Timeline negotiated",
+        "features": [
+          "Full custom web application",
+          "Complex React / Next.js architecture",
+          "Multiple API & service integrations",
+          "Role-based dashboards & admin panels",
+          "Comprehensive testing suite",
+          "30-day post-launch support",
+          "Dedicated communication channel"
+        ]
+      }
     }
   },
   "footer": {

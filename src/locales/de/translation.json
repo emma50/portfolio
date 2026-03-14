@@ -3,6 +3,7 @@
     "about": "Über mich",
     "experience": "Erfahrung",
     "projects": "Projekte",
+    "pricing": "Preise",
     "contact": "Kontakt",
     "hire": "Einstellen →"
   },
@@ -123,6 +124,74 @@
       "linkedin": "LinkedIn",
       "github": "GitHub",
       "twitter": "Twitter / X"
+    }
+  },
+  "pricing": {
+    "section_label": "Preise",
+    "title": "Klare Preise.",
+    "subtitle": "Transparente, wertorientierte Pakete mit klaren Lieferergebnissen. Alle Preise in Nigerianischen Naira (₦).",
+    "popular_badge": "Am beliebtesten",
+    "cta": "Gespräch starten →",
+    "retainer_label": "Zusatz",
+    "retainer_title": "Monatliches Retainer",
+    "retainer_desc": "Halten Sie Ihr Produkt aktuell und weiterentwickelt. Ideal für Unternehmen, die kontinuierlichen Frontend-Support benötigen, ohne Vollzeitkräfte einzustellen.",
+    "retainer_price": "₦150k – ₦400k",
+    "retainer_per": "/ Monat",
+    "retainer_cta": "Anfragen →",
+    "retainer_tag_1": "Fehlerbehebung & Updates",
+    "retainer_tag_2": "Performance-Monitoring",
+    "retainer_tag_3": "Neue Funktionen",
+    "retainer_tag_4": "Priorisierter Support",
+    "note_title": "So funktioniert die Zahlung",
+    "note_body": "Vor Projektbeginn ist eine Anzahlung von 40–50 % erforderlich. Der Restbetrag wird bei Lieferung und Ihrer Freigabe fällig. Jedes Projekt wird durch einen schriftlichen Vertrag abgesichert, der Umfang, Zeitplan und Revisionsanzahl festlegt.",
+    "packages": {
+      "starter": {
+        "tier": "Einsteiger",
+        "name": "Basispaket",
+        "target": "Kleine Unternehmen & persönliche Marken",
+        "price": "₦250k – ₦500k",
+        "delivery": "~2 Wochen Lieferzeit",
+        "features": [
+          "Responsive Website mit bis zu 5 Seiten",
+          "Moderne Framework-basierte Oberfläche",
+          "Kontaktformular-Integration",
+          "Grundlegendes On-Page-SEO",
+          "1 Revisionsrunde",
+          "Deployment-Unterstützung"
+        ]
+      },
+      "growth": {
+        "tier": "Wachstum",
+        "name": "Pro-Paket",
+        "target": "Startups & Produktunternehmen",
+        "price": "₦700k – ₦1,5m",
+        "delivery": "~4 Wochen Lieferzeit",
+        "features": [
+          "Bis zu 10 Seiten oder eine Einzel-Feature-App",
+          "Individuelle UI-Design-Implementierung",
+          "REST API & Backend-Integration",
+          "Benutzerauthentifizierung (Login & Registrierung)",
+          "Performance- & Core Web Vitals-Optimierung",
+          "3 Revisionsrunden",
+          "14-tägiger Support nach dem Launch"
+        ]
+      },
+      "premium": {
+        "tier": "Premium",
+        "name": "Enterprise",
+        "target": "Finanzierte Startups & Konzerne",
+        "price": "₦2m+",
+        "delivery": "Zeitplan nach Absprache",
+        "features": [
+          "Vollständig maßgeschneiderte Webanwendung",
+          "Komplexe React / Next.js-Architektur",
+          "Mehrere API- & Service-Integrationen",
+          "Rollenbasierte Dashboards & Admin-Panels",
+          "Umfassende Test-Suite",
+          "30-tägiger Support nach dem Launch",
+          "Dedizierter Kommunikationskanal"
+        ]
+      }
     }
   },
   "footer": {
