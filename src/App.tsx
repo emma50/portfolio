@@ -1,13 +1,15 @@
 import { Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-import Pricing from "./components/Pricing";
+// import Pricing from "./components/Pricing";
 import Testimonial from "./components/Testimonial";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import PricingPage from "./pages/PricingPage";
 
 function LoadingScreen() {
   return (
@@ -34,20 +36,30 @@ function LoadingScreen() {
   );
 }
 
-export default function App() {
+function PortfolioLayout() {
   return (
-    <Suspense fallback={<LoadingScreen />}>
+    <>
       <Nav />
       <main>
         <Hero />
         <About />
         <Experience />
         <Projects />
-        <Pricing />
         <Testimonial />
         <Contact />
       </main>
       <Footer />
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <Suspense fallback={<LoadingScreen />}>
+      <Routes>
+        <Route path="/" element={<PortfolioLayout />} />
+        <Route path="/pricing" element={<PricingPage />} />
+      </Routes>
     </Suspense>
   );
 }
