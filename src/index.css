@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-neutral-950 text-[#f0f0eb] font-body overflow-x-hidden;
+  }
+
+  /* Noise overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E");
+    opacity: 0.3;
+  }
+
+  /* Custom cursor — desktop only */
+  @media (pointer: fine) {
+    body { cursor: none; }
+    a, button { cursor: none; }
+  }
+}
+
+@layer components {
+  /* Cursor */
+  .cursor {
+    @apply fixed rounded-full pointer-events-none z-[9999] bg-lime;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    transition: width 0.15s, height 0.15s;
+    mix-blend-mode: difference;
+  }
+  .cursor.big { width: 14px; height: 14px; }
+
+  .cursor-ring {
+    @apply fixed rounded-full pointer-events-none z-[9998] border border-lime/35;
+    width: 34px;
+    height: 34px;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, border-color 0.2s;
+  }
+  .cursor-ring.big {
+    width: 46px;
+    height: 46px;
+    @apply border-lime;
+  }
+
+  /* Section label */
+  .s-label {
+    @apply font-mono text-10 text-lime tracking-widest2 uppercase flex items-center gap-2 mb-5;
+  }
+  .s-label::before {
+    content: '';
+    @apply block w-[18px] h-px bg-lime flex-shrink-0;
+  }
+
+  /* Section heading */
+  .s-heading {
+    @apply font-display font-extrabold leading-none tracking-tight;
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+  }
+  .s-heading em { @apply not-italic text-lime; }
+
+  /* Reveal animation */
+  .reveal {
+    @apply opacity-0 translate-y-5;
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .reveal.in { @apply opacity-100 translate-y-0; }
+  .reveal-d1 { transition-delay: 0.1s; }
+  .reveal-d2 { transition-delay: 0.2s; }
+  .reveal-d3 { transition-delay: 0.3s; }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-lime text-neutral-950 font-semibold
+           text-[14px] px-6 py-3 rounded-[3px] no-underline whitespace-nowrap
+           transition-all duration-200 hover:-translate-y-0.5 hover:bg-lime-dim;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 text-[#777] font-body text-[14px]
+           border border-neutral-750 px-6 py-3 rounded-[3px] no-underline whitespace-nowrap
+           transition-all duration-200 hover:text-white hover:border-neutral-700;
+  }
+
+  /* Tech pill */
+  .pill {
+    @apply font-mono text-10 text-lime bg-lime/[0.07] border border-lime/[0.16]
+           px-[10px] py-[5px] rounded-[2px] tracking-wide;
+  }
+
+  /* Availability dot */
+  .avail-dot {
+    @apply w-1.5 h-1.5 rounded-full bg-lime inline-block animate-blink;
+  }
+
+  /* Card shared */
+  .card-grid-border {
+    @apply border border-neutral-800 rounded-[6px] overflow-hidden;
+    background: theme('colors.neutral.800');
+    display: grid;
+    gap: 1px;
+  }
+}
+
+@layer utilities {
+  .font-800 { font-weight: 800; }
+  .line-height-tight { line-height: 0.95; }
+
+  /* Hero grid background */
+  .hero-grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(185,255,75,0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(185,255,75,0.035) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 100%, black 20%, transparent 100%);
+    mask-image: radial-gradient(ellipse 90% 70% at 50% 100%, black 20%, transparent 100%);
+  }
+
+  /* CTA background text */
+  .cta-bg-text {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: theme('fontFamily.display');
+    font-size: clamp(4rem, 16vw, 13rem);
+    font-weight: 800;
+    color: rgba(255,255,255,0.018);
+    white-space: nowrap;
+    pointer-events: none;
+    letter-spacing: -0.04em;
+    user-select: none;
+  }
+
+  /* Sticky sidebar only on desktop */
+  @media (min-width: 821px) {
+    .exp-sticky {
+      position: sticky;
+      top: calc(64px + 2rem);
+    }
+  }
+}
